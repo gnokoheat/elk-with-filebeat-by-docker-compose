@@ -1,4 +1,6 @@
 # elk-with-filebeat-by-docker-compose
+![GitHub](https://img.shields.io/github/license/gnokoheat/elk-with-filebeat-by-docker-compose) ![GitHub last commit](https://img.shields.io/github/last-commit/gnokoheat/elk-with-filebeat-by-docker-compose)
+
 ELK with Filebeat by Docker-compose - Simple &amp; Easy way to file logging
 
 ## Work flow
