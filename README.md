@@ -30,6 +30,13 @@ docker-compose up -d
 ### Customize Config
 - logstash.conf
 ```
+# Change 'timestamp' to your log custom timestamp key
+  date{
+    match => ["timestamp", "UNIX_MS"]
+    target => "@timestamp"
+  }
+```
+```
 # Change 'time.localtime' to your location time
 filter {
   ...
@@ -38,3 +45,4 @@ filter {
   }
 }
 ```
+- logstash.template.json : Change it to your log index
