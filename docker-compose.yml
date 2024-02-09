@@ -2,7 +2,7 @@ version: '3.3'
 services:
   elasticsearch:
     container_name: elasticsearch
-    image: elasticsearch:7.5.0
+    image: elasticsearch:7.17.18
     environment:
       - bootstrap.memory_lock=true
       - discovery.type=single-node
@@ -24,7 +24,7 @@ services:
         max-file: "50"
   kibana:
     container_name: kibana
-    image: kibana:7.5.0
+    image: kibana:7.17.18
     ulimits:
       memlock:
         soft: -1
@@ -45,7 +45,7 @@ services:
         max-file: "50"
   logstash:
     container_name: logstash
-    image: logstash:7.5.0
+    image: logstash:7.17.18
     ulimits:
       memlock:
         soft: -1
@@ -70,7 +70,7 @@ services:
   filebeat:
     user: root
     container_name: filebeat
-    image: docker.elastic.co/beats/filebeat:7.5.0
+    image: docker.elastic.co/beats/filebeat:7.17.18
     links:
       - logstash:logstash
     depends_on:

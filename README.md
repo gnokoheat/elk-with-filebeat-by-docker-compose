@@ -80,3 +80,10 @@ filter {
   }
 }
 ```
+
+### View in Kibana
+1. Create Index pattern
+![](docs/screenshot1.png?raw=true)
+
+2. Search Log
+![](docs/screenshot2.png?raw=true)
